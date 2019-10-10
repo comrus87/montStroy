@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
   <header class="page-header">
     <h1 class="visually-hidden"> Компания ЗАО "НСП МонтСтрой" </h1>
     <div class="page-header__wrap">
@@ -17,15 +22,13 @@
           <img src="img/logo-tablet.png" class="logo-tablet" alt="Логотип МонтСтрой" width="86" height="37">
         </a>
         <button class="page-header__nav-button" type="button"> </button>
-        <nav class="page-header__nav page-header__nav--close">
-          <ul class="page-header__list">
-            <li class="page-header__item"><a href="#">главная</a></li>
-            <li class="page-header__item"><a href="#">услуги</a></li>
-            <li class="page-header__item"><a href="#">проекты</a></li>
-            <li class="page-header__item"><a href="#">партнеры</a></li>
-            <li class="page-header__item"><a href="#">контакты</a></li>
-          </ul>
-        </nav>
+        <ul class="page-header__nav-list page-header__nav--close">
+          <li class="page-header__item"><a href="#">главная</a></li>
+          <li class="page-header__item"><a href="#">услуги</a></li>
+          <li class="page-header__item"><a href="#">проекты</a></li>
+          <li class="page-header__item"><a href="#">партнеры</a></li>
+          <li class="page-header__item"><a href="#">контакты</a></li>
+        </ul>
       </div>
       <div class="page-header__feedback-wrap">
         <a href="tel:+7(495)452-67-23" class="page-header__phone-link">+7 (495) 452-67-23</a>
@@ -34,5 +37,47 @@
 
     </div>
   </header>
+  <main>
+    <section class="intro">
+      <div class="intro__wrap">
+
+        <div class="intro__about-company">
+          <h2 class="intro__title"> строительно-монтажные работы </h2>
+            <p class="intro__description"> Компания ЗАО «НCП «МонтCтрой» успешно работает на российском рынке с <span>1992</span> года, и за это время зарекомендовала себя как ведущий разработчик качественных систем установок для предприятий, выполняет полный комплекс строительно-монтажных и пуско-наладочных работ по электроснабжению зданий и сооружений.
+          </p>
+          <div class="intro__link-container">
+            <a class="intro__link-servcies">наши услуги</a>
+            <a class="intro__link-сontact">связаться с нами</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="intro__advantages">
+        <ul class="intro__advantages-list">
+          <li class="intro__advantages-item">
+            <svg class="intro__advantages-img" width="62" height="64">
+              <use xlink:href="#like"></use>
+            </svg>
+            <span class="intro__advantages-text">Гарантированное высокое качество продукции</span>
+          </li>
+          <li class="intro__advantages-item">
+            <svg class="intro__advantages-img" width="74" height="49">
+              <use xlink:href="#handshake"></use>
+            </svg>
+            <span class="intro__advantages-text ">Исполнение всех сроков и обязательств</span>
+          </li>
+          <li class="intro__advantages-item">
+            <svg class="intro__advantages-img" width="70" height="69">
+              <use xlink:href="#settings"></use>
+            </svg>
+            <span class="intro__advantages-text">Собственная производственная база</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
 </body>
 </html>

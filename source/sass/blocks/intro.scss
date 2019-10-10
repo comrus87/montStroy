@@ -1,0 +1,113 @@
+.intro {
+  background: url("../img/bg-desktop.jpg") no-repeat;
+  background-color: $black-color;
+}
+
+.intro__about-company {
+  @include wrap-desktop;
+  padding-top: 150px;
+}
+
+.intro__title {
+  font-family: $raleway;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: $white-color;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.intro__description {
+  font-family: $roboto;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+  color: $white-color;
+  margin: 35px 0 50px 0;
+}
+
+.intro__description span {
+  color: $green-color;
+}
+
+.intro__link-container {
+  display: flex;
+  width: 621px;
+  justify-content: space-between;
+}
+
+.intro__link-servcies {
+  display: block;
+  width: 300px;
+  color: $black-color;
+  font-family: $roboto;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 26px;
+  background-color: $green-color;
+  text-align: center;
+  padding: 15px 0;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 2px 7px rgba(0, 255, 216, 0.65);
+  }
+}
+
+.intro__link-сontact {
+  display: block;
+  width: 300px;
+  color: $white-color;
+  font-family: $roboto;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 26px;
+  background-color: transparent;
+  text-align: center;
+  padding: 15px 0;
+  text-transform: uppercase;
+  border: 1px solid $green-color;
+
+  &:hover,
+  &:focus {
+    box-shadow: 2px 2px 7px rgba(0, 255, 216, 0.65), inset 2px 2px 7px rgba(0, 255, 216, 0.65);
+  }
+}
+
+.intro__advantages {
+  @include wrap-desktop;
+  padding-bottom: 80px;
+}
+
+.intro__advantages-list {
+  @include list-default;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 115px;
+}
+
+.intro__advantages-item {
+  display: flex;
+  flex-direction: column;
+  width: 235px;
+  text-align: center;
+}
+
+.intro__advantages-item:nth-child(2) {
+  width: 175px;
+}
+
+.intro__advantages-img {
+  fill: #b4b5b7;
+  margin: 0 auto;
+}
+
+.intro__advantages-text {
+  font-family: $roboto;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #b4b5b7;
+}
