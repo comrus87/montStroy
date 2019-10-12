@@ -11,6 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 22px 15px 13px;
 }
 
 .page-header__nav-wrap {
@@ -32,7 +33,7 @@
   display: flex;
   width: 342px;
   justify-content: space-between;
-  margin-top: -5px;
+  margin-top: -13px;
 }
 
 .page-header__item a {
@@ -42,6 +43,8 @@
   line-height: 20px;
   color: #707070;
   outline: none;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 
   &:hover,
   &:focus {
@@ -61,6 +64,7 @@
   font-size: 18px;
   line-height: 20px;
   margin-right: 25px;
+  margin-bottom: 8px;
   outline: none;
 
   &:hover,
@@ -79,8 +83,9 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 40px;
-  padding: 2px 0 3px;
+  padding: 2px 0 4px;
   cursor: pointer;
+  margin-bottom: 10px;
 
   &:hover {
     box-shadow: 0px 2px 5px rgba(0, 255, 216, 0.6);
@@ -95,7 +100,7 @@
 
   .page-header__wrap {
     @include wrap-tablet;
-    padding: 7px 42px 8px;
+    padding: 7px 64px 8px;
   }
 
   .page-header__nav-button {
@@ -107,6 +112,7 @@
     cursor: pointer;
     position: relative;
     outline: none;
+    margin-top: 2px;
 
     &:after {
       content: "";
@@ -122,6 +128,10 @@
   }
 
   // .page-header__nav--close {
+  //   display: none;
+  // }
+
+  //   .page-header__nav--close {
   //   display: none;
   // }
 
@@ -143,7 +153,7 @@
 
   .page-header__phone-link {
     font-size: 14px;
-    margin-right: 0;
+    margin: 7px 0 0 0;
   }
 
   .page-header__nav-list {
@@ -160,11 +170,12 @@
     display: block;
     font-weight: 400;
     font-size: 12px;
+    line-height: 16px;
     color: #383838;
     text-transform: uppercase;
     background-color: #e7e7e7;
     text-align: center;
-    padding: 10px 0;
+    padding: 13px 0 9px;
     border-bottom: 1px solid #dedede;
     border-top: 1px solid #e4e4e4;
 
@@ -174,11 +185,11 @@
     }
   }
 
-  .page-header__list .page-header__item:first-child {
+  .page-header__nav-list .page-header__item:first-child {
     display: none;
   }
 
-  .page-header__list .page-header__item:last-child {
+  .page-header__nav-list .page-header__item:last-child {
      border-bottom: none;
   }
 }
@@ -206,5 +217,17 @@
   .page-header__nav-list {
     width: 100%;
     top: 50px;
+  }
+
+  .page-header__nav-button {
+    width: 18px;
+    height: 14px;
+    cursor: pointer;
+    margin-top: -4px;
+
+    &:after {
+      width: 18px;
+      box-shadow: 0 6px 0 0 #afafaf, 0 14px 0 0 #afafaf;
+    }
   }
 }
