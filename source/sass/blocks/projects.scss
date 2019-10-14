@@ -1,0 +1,88 @@
+.projects__wrap {
+  @include wrap-desktop;
+  padding-top: 100px;
+  position: relative;
+}
+
+.projects__title {
+  font-family: $raleway;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 50px;
+  color: $black-color;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 72.3%;
+    height: 2px;
+    background-color: $black-color;
+    right: 15px;
+    top: 124px;
+  }
+}
+
+.projects__item-title {
+  font-family: $roboto;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 50px;
+  color: $white-color;
+}
+
+.projects__description {
+  font-family: $roboto;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #b6b6b7;
+}
+
+.projects__list {
+  @include list-default;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects__item {
+    width: calc(25% - 2.5px);
+    background-size: cover;
+    margin-bottom: 4px;
+}
+
+.projects__item:nth-child(6n+1) {
+  background: url("../img/stadium-desktop.jpg") no-repeat center;
+  margin-right: 3px;
+}
+
+.projects__item:nth-child(6n+2) {
+  background: url("../img/business-centr-desktop.jpg") no-repeat center;
+  margin-right: 4px;
+}
+
+.projects__item:nth-child(6n+3) {
+  background: url("../img/kino-desktop.jpg") no-repeat center;
+  margin-right: 3px;
+}
+
+.projects__item:nth-child(6n+4) {
+  background: url("../img/medial-desktop.jpg") no-repeat center;
+  margin-right: 0;
+}
+
+.projects__item:nth-child(6n+5) {
+  background: url("../img/company-desktop.jpg") no-repeat center;
+  width: calc(50% - 2px);
+   margin-right: 4px;
+}
+
+.projects__item:nth-child(6n+6) {
+  background: url("../img/buratino-desktop.jpg") no-repeat center;
+  width: calc(50% - 2px);
+  margin-right: 0;
+}
+
+
