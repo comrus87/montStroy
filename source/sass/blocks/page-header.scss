@@ -131,9 +131,6 @@
   //   display: none;
   // }
 
-  //   .page-header__nav--close {
-  //   display: none;
-  // }
 
   .logo-desktop {
     display: none;
@@ -181,7 +178,7 @@
 
     &:hover,
     &:focus {
-      opacity: 0.7;
+      background-color: #b7b7b7;
     }
   }
 
