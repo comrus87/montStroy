@@ -39,7 +39,9 @@
       <feComposite result="composite" operator="in" in2="SourceGraphic"/>
       <feBlend result="blend" in2="SourceGraphic"/>
     </filter>
-  </defs><symbol id="arrow" viewBox="0 0 16 6">
+  </defs><symbol id="arrow-black" viewBox="0 0 16 6">
+  <image id="&#x441;&#x442;&#x440;&#x435;&#x43B;&#x43A;&#x430;_&#x432;&#x43F;&#x440;&#x430;&#x432;&#x43E;" data-name="&#x441;&#x442;&#x440;&#x435;&#x43B;&#x43A;&#x430; &#x432;&#x43F;&#x440;&#x430;&#x432;&#x43E;" width="16" height="6" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAGBAMAAAA4UgPUAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAHlBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC3KG9qAAAACXRSTlMAnwrTK/Vg1iwf2jHpAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAB5JREFUCNdjYAADIQYomOzAMBMCwhAMCJjewABTDAAkKQsZRDVPmAAAAABJRU5ErkJggg=="/>
+</symbol><symbol id="arrow" viewBox="0 0 16 6">
   
   <path id="&#x441;&#x440;&#x435;&#x43B;&#x43A;&#x430;" class="cls-1" d="M929,2692v6l4-3Zm-12,2h13v2H917v-2Z" transform="translate(-917 -2692)"/>
 </symbol><symbol id="facebook" viewBox="0 0 14 26">
