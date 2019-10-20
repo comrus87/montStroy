@@ -241,15 +241,15 @@
           <button type="button" class="partners__button partners__button-next" aria-label="next"></button>
         </div>
         <ul class="partners__list">
-          <li class="partners__item partners__item--previous"><a class="partners__item-link" href="#"></a></li>
+          <li class="partners__item"><a class="partners__item-link" href="#"></a></li>
+          <li class="partners__item partners__item--prev"><a class="partners__item-link" href="#"></a></li>
           <li class="partners__item partners__item--active"><a class="partners__item-link" href="#"></a></li>
           <li class="partners__item partners__item--next"><a class="partners__item-link" href="#"></a></li>
-          <li class="partners__item partners__item--hidden"><a class="partners__item-link" href="#"></a></li>
         </ul>
         <div class="partners__slider-dots">
           <div class="partners__dot"></div>
-          <div class="partners__dot"></div>
-          <div class="partners__dot dot-active"></div>
+          <div class="partners__dot partners__dot--prev"></div>
+          <div class="partners__dot partners__dot--active"></div>
           <div class="partners__dot"></div>
         </div>
       </div>
@@ -257,7 +257,111 @@
     </section>
   </main>
   <footer>
+      <h2 class="page-footer__title"> контакты </h2>
+      <div class="page-footer__map">
+      </div>
+      <div class="page-footer">
+        <div class="page-footer__wrap">
 
+          <div class="page-footer__first-column">
+            <a class="page-footer__logo-link">
+              <img src="img/logo-desktop.png" class="logo-desktop" alt="Логотип МонтСтрой" width="141" height="60">
+            </a>
+
+            <p class="page-footer__company">ЗАО «НCП «МонтCтрой»</p>
+
+            <nav class="page-footer__nav">
+              <ul class="page-footer__nav-list">
+                <li class="page-footer__nav-item"><a href="#">Услуги</a></li>
+                <li class="page-footer__nav-item"><a href="#">Проекты</a></li>
+                <li class="page-footer__nav-item"><a href="#">Партнеры</a></li>
+                <li class="page-footer__nav-item"><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+
+            <div class="page-footer__contacts--mobile">
+              <a class="page-footer__adress" href="#">Варшавское шоссе, д,&nbsp;118, к.1 Бизнес-центр «ВАРШАВКА Sky»</a>
+              <a class="page-footer__email" href="mali:zao@montstroy.ru">zao@montstroy.ru</a>
+              <div class="page-footer__phone-wrap">
+                <a class="page-footer__phone" href="tel:+74954526723">+7 (495) 452-67-23</a>
+                <span class="page-footer__graphic">Ежедневно с 9:00 до 18:00</span>
+              </div>
+            </div>
+
+            <ul class="page-footer__social-list">
+              <li class="page-footer__social-item">
+                <a class="page-footer__link-vkontakte" href="#">
+                  <span class="visually-hidden">Вконтакте</span>
+                  <svg class="page-footer__social-img" width="48" height="38">
+                    <use xlink:href="#vk"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="page-footer__social-item">
+                <a class="page-footer__link-twitter" href="#">
+                  <span class="visually-hidden">Твиттер</span>
+                  <svg class="page-footer__social-img" width="48" height="28">
+                    <use xlink:href="#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="page-footer__social-item">
+                <a class="page-footer__link-facebook" href="#">
+                  <span class="visually-hidden">Фейсбук</span>
+                  <svg class="page-footer__social-img" width="26" height="36">
+                    <use xlink:href="#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+
+          <form class="page-footer__form" method="post" action="#">
+            <h3 class="page-footer__form-title"> свяжитесь с нами </h3>
+
+            <div class="page-footer__form-wrap">
+              <div class="page-footer__form-name">
+                <label for="form-name" class="page-footer__form-label">Имя</label>
+                <input class="page-footer__form-input" type="text" id="form-name" required>
+              </div>
+
+              <div class="page-footer__form-phone">
+                <label for="form-phone" class="page-footer__form-label">Телефон</label>
+                <input class="page-footer__form-input" type="text" id="form-phone" required>
+              </div>
+
+              <div class="page-footer__form-email">
+                <label for="form-email" class="page-footer__form-label">E-mail</label>
+                <input class="page-footer__form-input" type="text" id="form-email" required>
+              </div>
+
+              <div class="page-footer__form-message">
+                <label for="form-message" class="page-footer__form-label">Сообщение</label>
+                <input class="page-footer__form-input" type="text" id="form-message" required>
+              </div>
+            </div>
+
+            <p class="page-footer__form-note">Заполняя форму на сайте, вы соглашаетесь с нашей <a href="#" class="page-footer__form-privacy">Политикой конфиденциальности</a></p>
+
+            <button class="page-footer__form-button" type="submit">Отправить</button>
+          </form>
+
+          <div class="page-footer__contacts">
+            <a class="page-footer__adress" href="#">Варшавское шоссе, д,&nbsp;118, к.1 Бизнес-центр «ВАРШАВКА Sky»</a>
+            <a class="page-footer__email" href="mali:zao@montstroy.ru">zao@montstroy.ru</a>
+            <div class="page-footer__phone-wrap">
+              <a class="page-footer__phone" href="tel:+74954526723">+7 (495) 452-67-23</a>
+              <span class="page-footer__graphic">Ежедневно с 9:00 до 18:00</span>
+            </div>
+          </div>
+
+            <p class="page-footer__copyright">1992-2018 ©  ЗАО “НСП ”МонтСтрой”. Все права защищены</p>
+
+        </div>
+      </div>
   </footer>
 </body>
 </html>
