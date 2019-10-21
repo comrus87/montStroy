@@ -46,6 +46,8 @@
   width: calc(25% - 22.5px);
   border: 1px solid #ededed;
   min-height: 135px;
+  background-color: $white-color;
+  background-repeat: no-repeat;
 }
 
 .partners__item-link {
@@ -55,27 +57,24 @@
 }
 
 .partners__item:first-child {
-  background: url("../img/ava-partner.png") no-repeat;
-  background-position: 28% 100%;
-  background-color: $white-color;
+  background-image: url("../img/ava-partner.png");
+  background-position: 30% 50%;
+
 }
 
 .partners__item:nth-child(2) {
-  background: url("../img/mirror-partner.png") no-repeat;
+  background-image: url("../img/mirror-partner.png");
   background-position: 50% -18px;
-  background-color: $white-color;
 }
 
 .partners__item:nth-child(3) {
-  background: url("../img/shield-partner.png") no-repeat;
+  background-image: url("../img/shield-partner.png");
   background-position: 50% 73%;
-  background-color: $white-color;
 }
 
 .partners__item:nth-child(4) {
-  background: url("../img/teplodom-partner.png") no-repeat;
+  background-image: url("../img/teplodom-partner.png");
   background-position: 50% 90%;
-  background-color: $white-color;
 }
 
 .partners__buttons-container {
@@ -165,12 +164,12 @@
 
   .partners__item:nth-child(2) {
     background-position: 50% 37%;
-    background-size: 65%;
   }
 
   .partners__item--prev {
     transform: scale(1.2);
     z-index: -10;
+    background-size: 65% 80%;
   }
 
   .partners__item--active {

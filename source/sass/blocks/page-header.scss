@@ -92,7 +92,6 @@
   }
 }
 
-
 @media (max-width: $tablet-width) {
   .page-header {
     position: relative;
@@ -125,12 +124,16 @@
       background-color: #afafaf;
       box-shadow: 0 10px 0 0 #afafaf, 0 20px 0 0 #afafaf;
     }
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
   }
 
-  // .page-header__nav--close {
-  //   display: none;
-  // }
-
+  .page-header__nav--close {
+    display: none;
+  }
 
   .logo-desktop {
     display: none;

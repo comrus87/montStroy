@@ -59,6 +59,7 @@
   text-align: center;
   padding: 15px 0;
   text-transform: uppercase;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -79,6 +80,7 @@
   padding: 15px 0;
   text-transform: uppercase;
   border: 1px solid $green-color;
+  cursor: pointer;
 
   &:hover,
   &:focus {

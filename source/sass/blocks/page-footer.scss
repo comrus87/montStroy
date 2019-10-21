@@ -82,6 +82,11 @@
     left: -26px;
     top: 6px;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
 }
 
 .page-footer__email {
@@ -98,6 +103,11 @@
     left: -33px;
     top: 9px;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
 }
 
 .page-footer__phone {
@@ -112,6 +122,11 @@
     background: url("../img/phone.svg") no-repeat;
     left: -30px;
     top: 5px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
   }
 }
 
@@ -285,7 +300,6 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
   }
 }
-
 
 @media (max-width: $tablet-width) {
   .page-footer__map {
@@ -485,9 +499,9 @@
 @media (max-width: $mobile-width) {
   .page-footer__map {
     min-height: 198px;
-    background: url("../img/map-mobile.jpg") no-repeat center;
+    background: url("../img/map-mobile.jpg") no-repeat 50% 0;
     background-size: cover;
-    margin-top: 44px;
+    margin-top: 22px;
   }
 
   .page-footer__title {
@@ -498,12 +512,13 @@
     line-height: 20px;
     color: $black-color;
     text-transform: uppercase;
-    margin: 45px 0 0 20px;
+    letter-spacing: 0.03em;
+    margin: 37px 0 0 20px;
   }
 
   .page-footer__wrap {
     @include wrap-mobile;
-    padding: 22px 0 10px;
+    padding: 18px 0 10px;
   }
 
   .page-footer__first-column {
@@ -527,20 +542,89 @@
 
   .page-footer__contacts {
     width: 100%;
-    padding: 0 63px 20px 98px;
+    padding: 0 63px 22px 98px;
     margin: 0;
   }
 
+  .page-footer__adress {
+    line-height: 20px;
+
+    &:after {
+      left: -30px;
+      top: 0;
+    }
+  }
+
   .page-footer__email {
-    margin: 15px 0 15px;
+    margin: 7px 0;
 
       &:after {
-      top: 7px;
+      left: -32px;
     }
+  }
+
+  .page-footer__phone {
+    font-weight: 400;
+  }
+
+  .page-footer__phone-wrap {
+    margin-left: -2px;
+  }
+
+  .page-footer__form-title {
+    margin: 0 0 31px 0;
+  }
+
+  .page-footer__form-name {
+    width: calc(50% - 22px);
+  }
+
+  .page-footer__form-phone {
+   width: calc(50% - 22px);
+  }
+
+  .page-footer__form-input {
+    padding: 4px 0;
+  }
+
+  .page-footer__form-phone label {
+    margin-left: -5px;
+  }
+
+  .page-footer__form-email {
+    margin-top: 26px;
+    margin-left: -2px;
+
+    .page-footer__form-input {
+      padding: 3px 0;
+    }
+  }
+
+  .page-footer__form-message {
+    margin-top: 33px;
+
+    .page-footer__form-label {
+      margin: 0;
+      letter-spacing: 0.03em;
+    }
+
+    .page-footer__form-input {
+      padding: 3px 0;
+    }
+  }
+
+  .page-footer__form-note {
+    margin: 23px auto 0;
+  }
+
+  .page-footer__form-button {
+    margin: 31px auto 0;
+    padding: 12px 0 14px;
   }
 
   .page-footer__nav {
     width: 100%;
+    background-color: #1a1a1a;
   }
 
   .page-footer__nav-list {
@@ -556,38 +640,82 @@
   .page-footer__nav-item a {
     font-size: 14px;
     line-height: 14px;
-    padding: 20px 20px 13px;
-
-  }
-
-  .page-footer__social-list {
-    width: 14%;
-    margin: 0;
+    padding: 19px 20px 16px;
   }
 
   .page-footer__contacts--mobile {
     display: block;
-    padding: 22px 110px 35px 49px;
+    padding: 16px 110px 35px 49px;
+    background-color: #1a1a1a;
+
+    a {
+      color: #8d8d8d;
+      line-height: 28px;
+    }
+
+    .page-footer__adress {
+      &:after {
+        background: url("../img/geolocation-mobile.svg") no-repeat;
+        left: -28px;
+        top: 0;
+      }
+    }
+
+    .page-footer__email {
+      margin: 15px 0 17px 4px;
+      &:after {
+        background: url("../img/letter-mobile.svg") no-repeat;
+        left: -33px;
+        top: 9px;
+      }
+    }
+
+    .page-footer__phone {
+      letter-spacing: 0.03em;
+      margin-left: -1px;
+      &:after {
+        background: url("../img/phone-mobile.svg") no-repeat;
+        left: -26px;
+        top: 6px;
+      }
+    }
+  }
+
+  .page-footer__social-list {
+    width: 100%;
+    margin: 0;
+    background-color: #1a1a1a;
+    justify-content: flex-start;
+    padding: 0 20px 32px;
+  }
+
+  .page-footer__social-item {
+    margin-right: 22px;
   }
 
   .page-footer__link-vkontakte .page-footer__social-img {
-    width: 48px;
+    width: 42px;
     height: 38px;
     margin: 0;
   }
 
   .page-footer__link-twitter .page-footer__social-img {
     width: 48px;
-    height: 28px;
+    height: 32px;
     margin: 0;
   }
 
   .page-footer__link-facebook .page-footer__social-img {
-    width: 26px;
-    height: 36px;
+    width: 30px;
+    height: 40px;
     margin: 0;
     padding-left: 0;
   }
 
-
+  .page-footer__copyright {
+    margin: 12px auto 0;
+    width: 60%;
+    line-height: 14px;
+    text-align: center;
+  }
 }
