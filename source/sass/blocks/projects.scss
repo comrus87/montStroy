@@ -14,7 +14,7 @@
   letter-spacing: 0.04em;
   margin: 0 0 35px 0;
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     display: block;
@@ -102,7 +102,6 @@
     line-height: 42px;
     margin: 0 0 32px 0;
   }
-
 }
 
 .projects__item:nth-child(6n+6) {
@@ -154,7 +153,7 @@
     line-height: 26px;
     margin: 0 0 43px 0;
 
-    &:after {
+    &::after {
       display: none;
     }
   }

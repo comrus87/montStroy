@@ -10,11 +10,11 @@
   display: none;
 }
 
-.page-footer__contacts--mobile {
+.page-footer__contacts-mobile {
   display: none;
 }
 
-.page-footer {
+.page-footer__container {
   background-color: $black-color;
 }
 
@@ -72,7 +72,7 @@
 .page-footer__adress {
   position: relative;
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     display: block;
@@ -93,7 +93,7 @@
   margin: 40px 0 38px 4px;
   position: relative;
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     display: block;
@@ -113,7 +113,7 @@
 .page-footer__phone {
   position: relative;
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     display: block;
@@ -180,7 +180,6 @@
   letter-spacing: 0.05em;
 }
 
-
 .page-footer__form {
   position: relative;
   width: calc(50% - 5px);
@@ -196,7 +195,6 @@
   justify-content: space-between;
   padding-right: 30px;
 }
-
 
 .page-footer__form-title {
   font-family: $raleway;
@@ -229,12 +227,10 @@
   padding: 6px 0;
 }
 
-
 .page-footer__form-name,
 .page-footer__form-phone {
   width: calc(50% - 22px);
 }
-
 
 .page-footer__form-email,
 .page-footer__form-message {
@@ -412,7 +408,7 @@
     font-size: 14px;
     line-height: 28px;
 
-    &:after {
+    &::after {
       left: -28px;
       top: 5px;
     }
@@ -432,7 +428,7 @@
   .page-footer__email {
     margin: 40px 0 36px 2px;
 
-      &:after {
+    &::after {
       top: 7px;
     }
   }
@@ -549,7 +545,7 @@
   .page-footer__adress {
     line-height: 20px;
 
-    &:after {
+    &::after {
       left: -30px;
       top: 0;
     }
@@ -558,7 +554,7 @@
   .page-footer__email {
     margin: 7px 0;
 
-      &:after {
+    &::after {
       left: -32px;
     }
   }
@@ -580,7 +576,7 @@
   }
 
   .page-footer__form-phone {
-   width: calc(50% - 22px);
+    width: calc(50% - 22px);
   }
 
   .page-footer__form-input {
@@ -643,7 +639,7 @@
     padding: 19px 20px 16px;
   }
 
-  .page-footer__contacts--mobile {
+  .page-footer__contacts-mobile {
     display: block;
     padding: 16px 110px 35px 49px;
     background-color: #1a1a1a;
@@ -654,7 +650,7 @@
     }
 
     .page-footer__adress {
-      &:after {
+      &::after {
         background: url("../img/geolocation-mobile.svg") no-repeat;
         left: -28px;
         top: 0;
@@ -663,7 +659,8 @@
 
     .page-footer__email {
       margin: 15px 0 17px 4px;
-      &:after {
+
+      &::after {
         background: url("../img/letter-mobile.svg") no-repeat;
         left: -33px;
         top: 9px;
@@ -673,7 +670,8 @@
     .page-footer__phone {
       letter-spacing: 0.03em;
       margin-left: -1px;
-      &:after {
+
+      &::after {
         background: url("../img/phone-mobile.svg") no-repeat;
         left: -26px;
         top: 6px;
