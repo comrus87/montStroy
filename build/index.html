@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Проект МонтСтрой</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -204,31 +205,36 @@ c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211
       <div class="intro__advantages">
         <p class="intro__description-mobile"> Компания ЗАО «НCП «МонтCтрой» успешно работает на российском рынке с 1992 года, и за это время зарекомендовала себя как ведущий разработчик качественных систем установок для предприятий, выполняет полный комплекс строительно-монтажных и пуско-наладочных работ по электроснабжению зданий и сооружений.
         </p>
-        <ul class="intro__advantages-list">
-          <li class="intro__advantages-item guarantee-item">
-            <svg class="intro__advantages-img" width="62" height="64">
-              <use xlink:href="#like"></use>
-            </svg>
-            <span class="intro__advantages-text">Гарантированное высокое качество продукции</span>
-          </li>
-          <li class="intro__advantages-item performance-item intro__advantages-item--active">
-            <svg class="intro__advantages-img" width="74" height="49">
-              <use xlink:href="#handshake"></use>
-            </svg>
-            <span class="intro__advantages-text">Исполнение всех сроков и обязательств</span>
-          </li>
-          <li class="intro__advantages-item base-item">
-            <svg class="intro__advantages-img" width="70" height="69">
-              <use xlink:href="#settings"></use>
-            </svg>
-            <span class="intro__advantages-text">Собственная производственная база</span>
-          </li>
-        </ul>
+
+        <div class="intro__advantages-container">
+          <ul class="intro__advantages-list">
+            <li class="intro__advantages-item guarantee-item">
+              <svg class="intro__advantages-img" width="62" height="64">
+                <use xlink:href="#like"></use>
+              </svg>
+              <span class="intro__advantages-text">Гарантированное высокое качество продукции</span>
+            </li>
+            <li class="intro__advantages-item performance-item intro__advantages-item--active">
+              <svg class="intro__advantages-img" width="74" height="49">
+                <use xlink:href="#handshake"></use>
+              </svg>
+              <span class="intro__advantages-text">Исполнение всех сроков и обязательств</span>
+            </li>
+            <li class="intro__advantages-item base-item">
+              <svg class="intro__advantages-img" width="70" height="69">
+                <use xlink:href="#settings"></use>
+              </svg>
+              <span class="intro__advantages-text">Собственная производственная база</span>
+            </li>
+          </ul>
+        </div>
+
         <div class="intro__slider-dots">
           <div class="intro__dot"></div>
           <div class="intro__dot dot-active"></div>
           <div class="intro__dot"></div>
         </div>
+
       </div>
     </section>
 
@@ -379,12 +385,16 @@ c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211
           <button type="button" class="partners__button partners__button-previous" aria-label="previous"></button>
           <button type="button" class="partners__button partners__button-next" aria-label="next"></button>
         </div>
-        <ul class="partners__list">
-          <li class="partners__item"><a class="partners__item-link" href="#"></a></li>
-          <li class="partners__item partners__item--prev"><a class="partners__item-link" href="#"></a></li>
-          <li class="partners__item partners__item--active"><a class="partners__item-link" href="#"></a></li>
-          <li class="partners__item partners__item--next"><a class="partners__item-link" href="#"></a></li>
-        </ul>
+
+        <div class="partners__list-container">
+          <ul class="partners__list">
+            <li class="partners__item"><a class="partners__item-link" href="#"></a></li>
+            <li class="partners__item partners__item--prev"><a class="partners__item-link" href="#"></a></li>
+            <li class="partners__item partners__item--active"><a class="partners__item-link" href="#"></a></li>
+            <li class="partners__item partners__item--next"><a class="partners__item-link" href="#"></a></li>
+          </ul>
+        </div>
+
         <div class="partners__slider-dots">
           <div class="partners__dot"></div>
           <div class="partners__dot partners__dot--prev"></div>
@@ -490,6 +500,7 @@ c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211
       </div>
   </footer>
   <script src="https://unpkg.com/imask"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

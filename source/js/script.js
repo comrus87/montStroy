@@ -15,7 +15,6 @@ const email = document.querySelectorAll('.page-footer__form-input')[2];
 const message = document.querySelectorAll('.page-footer__form-input')[3];
 const form = document.querySelector('.page-footer__form');
 
-
 btnNav.addEventListener('click', function () {
   navList.classList.toggle('page-header__nav-list--close');
 });
@@ -90,3 +89,31 @@ form.addEventListener('submit', function (evt) {
   evt.preventDefault();
   form.reset();
 })
+
+
+
+var swiperDesktop = new Swiper('.partners__list-container', {
+  init: true,
+  slidesPerView: 4,
+  spaceBetween: 30,
+  loop: true,
+  navigation: {
+    nextEl: '.partners__button-next',
+    prevEl: '.partners__button-previous',
+  }
+});
+
+
+// if (window.matchMedia('(max-width: 1023px)').matches) {
+
+//     var swiper1 = new Swiper('.intro__advantages-container', {
+//       slidesPerView: 3,
+//       initialSlide: 2,
+//       pagination: {
+//         el: '.intro__slider-dots',
+//         clickable: true,
+//       },
+//     });
+
+
+// }
