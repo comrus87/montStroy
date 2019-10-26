@@ -90,91 +90,57 @@ form.addEventListener('submit', function (evt) {
   form.reset();
 })
 
-let swiperPartnersDesktop;
-let swiperPartnersTablet;
-let swiperPartnersMobile;
-let swiperAdvantagesTablet;
-let swiperAdvantagesMobile;
 
-let currentSize = '';
+let swiperPartners = new Swiper('.partners__list-container', {
+    slidesPerView: 1,
+    pagination: {
+      el: '.partners__slider-dots',
+      clickable: true
+    },
 
-
-function initSwiper () {
-
-  if (window.matchMedia('(min-width: 1024px)').matches && currentSize !== 'desktop') {
-
-    currentSize = 'desktop';
-
-    swiperPartnersDesktop = new Swiper('.partners__list-container', {
-      init: false,
-      slidesPerView: 4,
-      spaceBetween: 30,
-      loop: true,
-      navigation: {
-        nextEl: '.partners__button-next',
-        prevEl: '.partners__button-previous',
+     breakpoints: {
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        initialSlide: 1,
+        centeredSlides: true
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        centeredSlides: false,
+        navigation: {
+          nextEl: '.partners__button-next',
+          prevEl: '.partners__button-previous'
+        }
       }
-    });
+    }
+  });
 
-    swiperPartnersDesktop.init();
-  };
+let swiperAdvantages = new Swiper('.intro__advantages-container', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  pagination: {
+    el: '.intro__slider-dots',
+    clickable: true,
+  },
 
-  if (window.matchMedia('(min-width: 768px) and (max-width: 1023px)').matches && currentSize !== 'tablet') {
-
-    currentSize = 'tablet';
-
-    swiperPartnersTablet = new Swiper('.partners__list-container', {
-      init: false,
+  breakpoints: {
+    768: {
       slidesPerView: 3,
       spaceBetween: 10,
       initialSlide: 1,
       centeredSlides: true,
-      loop: true,
-      pagination: {
-        el: '.partners__slider-dots',
-        clickable: true,
-      },
-    });
-
-    swiperPartnersTablet.init();
-
-    swiperAdvantagesTablet = new Swiper('.intro__advantages-container', {
-      init: false,
-      slidesPerView: 3,
-      spaceBetween: 10,
-      initialSlide: 1,
-      centeredSlides: true,
-      loop: true,
-      pagination: {
-        el: '.intro__slider-dots',
-        clickable: true,
-      },
-    });
-
-    swiperAdvantagesTablet.init();
+    }
   }
-
-  if (window.matchMedia('(max-width: 767px)').matches && currentSize !== 'mobile') {
-
-    currentSize = 'mobile';
-
-    swiperPartnersMobile = new Swiper('.partners__list-container', {
-      init: false,
-      slidesPerView: 1,
-      loop: true,
-      pagination: {
-        el: '.partners__slider-dots',
-        clickable: true,
-      },
-    });
-
-    swiperPartnersMobile.init();
-  }
-
-}
-
-initSwiper();
-
-window.addEventListener('resize', initSwiper);
+});
 
 
+
+// window.addEventListener('resize', function () {
+//   if (window.matchMedia('(min-width: 1024px)').matches) {
+//     swiperAdvantages.destroy();
+//   } else {
+//     swiperAdvantages.init();
+//   };
+// })

@@ -243,7 +243,6 @@
   .partners__item {
     min-height: 135px;
     width: 100%;
-    display: none;
     box-shadow: none;
     border: 1px solid #ededed;
   }
@@ -273,7 +272,6 @@
   }
 
   .partners__list-container .swiper-slide-active {
-    display: block;
     transform: scale(1);
 
     a {
