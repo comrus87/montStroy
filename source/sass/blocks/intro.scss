@@ -212,6 +212,10 @@
     padding-bottom: 30px;
   }
 
+  .intro__advantages-container {
+
+  }
+
   .intro__advantages-list {
     width: 100%;
     margin: 71px auto 0;
@@ -222,7 +226,7 @@
     background-color: $white-color;
     margin: 0;
     padding: 95px 0 36px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05), -10px 0 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05), -5px 0 8px rgba(0, 0, 0, 0.05);
   }
 
   .intro__advantages-text {
@@ -265,18 +269,19 @@
     margin: 23px auto 0;
   }
 
-  .intro__dot {
+  .intro__slider-dots .swiper-pagination-bullet {
     width: 8px;
     height: 8px;
     border-radius: 50%;
     background-color: #dddddd;
   }
 
-  .dot-active {
+  .intro__slider-dots .swiper-pagination-bullet-active {
     background-color: $green-color;
+    outline: none;
   }
 
-  .intro__advantages-item--active {
+  .intro__advantages-container .swiper-slide-active {
     z-index: 20;
     transform: scale(1.2);
 
