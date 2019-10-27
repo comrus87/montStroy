@@ -15,6 +15,7 @@ var svgstore = require("gulp-svgstore")
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var babel = require("gulp-babel");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -84,7 +85,8 @@ gulp.task("html", function () {
 
 gulp.task("js", function () {
   return gulp.src("source/js/*.js")
-    .pipe(gulp.dest("build/js"));
+  .pipe(babel())
+  .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("copy", function () {
