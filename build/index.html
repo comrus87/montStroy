@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Проект МонтСтрой</title>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=a021498a-88d5-484c-854f-5645d1c25086&lang=ru_RU" type="text/javascript"></script>
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.min.css">
+
 </head>
 <body>
 
@@ -205,13 +207,6 @@ c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211
       <div class="intro__advantages">
         <p class="intro__description-mobile"> Компания ЗАО «НCП «МонтCтрой» успешно работает на российском рынке с 1992 года, и за это время зарекомендовала себя как ведущий разработчик качественных систем установок для предприятий, выполняет полный комплекс строительно-монтажных и пуско-наладочных работ по электроснабжению зданий и сооружений.
         </p>
-
-
-
-
-
-
-
         <div class="intro__advantages-container swiper-container">
           <ul class="intro__advantages-list swiper-wrapper">
             <li class="intro__advantages-item guarantee-item swiper-slide">
@@ -243,12 +238,6 @@ c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211
 
       </div>
     </section>
-
-
-
-
-
-
     <section class="services" id="services">
       <div class="services__wrap">
         <h2 class="services__title"> услуги </h2>
@@ -389,9 +378,6 @@ c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211
         </ul>
       </div>
     </section>
-
-
-
     <section class="partners">
       <div class="partners__wrap">
         <h2 class="partners__title"> <span class="partners__title-tablet">наши</span> партнеры </h2>
@@ -426,7 +412,6 @@ c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211
                 <img class="partners__img" src="img/teplodom-partner.png" width="131" height="95" alt="Компания Теплодомэнерг">
               </a>
             </li>
-
           </ul>
         </div>
 
@@ -438,14 +423,13 @@ c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211
         </div>
       </div>
     </section>
-
-
-
   </main>
   <footer class="page-footer">
       <h2 class="page-footer__title"> контакты </h2>
-      <div class="page-footer__map">
+
+      <div class="page-footer__map" id="map">
       </div>
+
       <div class="page-footer__container">
         <div class="page-footer__wrap">
 

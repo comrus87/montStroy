@@ -231,7 +231,7 @@
     line-height: 16.26px;
     display: block;
     width: 65%;
-    margin: 95px auto 36px;
+    margin: 95px auto 0;
     letter-spacing: 0;
   }
 
@@ -419,7 +419,7 @@
     height: 6px;
   }
 
-  .intro__advantages-container .swiper-slide-active {
+  .intro__advantages-container .swiper-pagination-bullet-active {
     width: 8px;
     height: 8px;
   }

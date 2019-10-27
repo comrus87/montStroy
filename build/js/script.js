@@ -92,6 +92,7 @@ form.addEventListener('submit', function (evt) {
 
 
 let swiperPartners = new Swiper('.partners__list-container', {
+    loop: true,
     slidesPerView: 1,
     pagination: {
       el: '.partners__slider-dots',
@@ -118,7 +119,9 @@ let swiperPartners = new Swiper('.partners__list-container', {
   });
 
 let swiperAdvantages = new Swiper('.intro__advantages-container', {
+  loop: true,
   slidesPerView: 1,
+  initialSlide: 1,
   spaceBetween: 20,
   pagination: {
     el: '.intro__slider-dots',
@@ -129,18 +132,54 @@ let swiperAdvantages = new Swiper('.intro__advantages-container', {
     768: {
       slidesPerView: 3,
       spaceBetween: 10,
-      initialSlide: 1,
       centeredSlides: true,
     }
   }
 });
 
+function checkedSwiper () {
+  if (window.matchMedia('(min-width: 1024px)').matches && swiperAdvantages !== undefined) {
+    swiperAdvantages.destroy();
+  } else if (swiperAdvantages === undefined) {
+    return swiperAdvantages;
+  };
+}
 
+checkedSwiper();
 
-// window.addEventListener('resize', function () {
-//   if (window.matchMedia('(min-width: 1024px)').matches) {
-//     swiperAdvantages.destroy();
-//   } else {
-//     swiperAdvantages.init();
-//   };
-// })
+window.addEventListener('resize', checkedSwiper);
+
+ymaps.ready(init);
+
+function init() {
+    let myMap = new ymaps.Map("map", {
+        center: [55.63176836, 37.61793924],
+        zoom: 16
+    });
+
+    let placemarkDesktop = new ymaps.Placemark([55.63176836, 37.61793924], {}, {
+      iconLayout: 'default#image',
+      iconImageHref: 'img/map-marker.png',
+      iconImageSize: [74, 98],
+      iconImageOffset: [-50, -92]
+    });
+
+    let placemarkTablet = new ymaps.Placemark([55.63176836, 37.61793924], {}, {
+      iconLayout: 'default#image',
+      iconImageHref: 'img/map-marker.png',
+      iconImageSize: [22, 26],
+      iconImageOffset: [-15, -32]
+    });
+
+    function toggleMarker () {
+      if (window.matchMedia('(min-width: 1024px)').matches) {
+        myMap.geoObjects.add(placemarkDesktop);
+        myMap.geoObjects.remove(placemarkTablet);
+      } else {
+        myMap.geoObjects.remove(placemarkDesktop);
+        myMap.geoObjects.add(placemarkTablet);
+      }
+    };
+    toggleMarker();
+    window.addEventListener('resize', toggleMarker);
+}
