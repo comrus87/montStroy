@@ -76,7 +76,6 @@ const onEmailValidate = function () {
   const reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 
   if (reg.test(value) == false && value != '') {
-    console.log(value.length, value);
     email.setCustomValidity(ERROR_EMAIL_MESSAGE);
   } else {
     email.setCustomValidity('');
@@ -89,7 +88,6 @@ form.addEventListener('submit', function (evt) {
   evt.preventDefault();
   form.reset();
 })
-
 
 let swiperPartners = new Swiper('.partners__list-container', {
     loop: true,
@@ -131,7 +129,7 @@ let swiperAdvantages = new Swiper('.intro__advantages-container', {
     768: {
       slidesPerView: 3,
       spaceBetween: 10,
-      centeredSlides: true,
+      centeredSlides: true
     }
   }
 });

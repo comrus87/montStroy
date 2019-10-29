@@ -90,7 +90,7 @@
 
 .intro__advantages {
   @include wrap-desktop;
-  padding-bottom: 75px;
+  padding-bottom: 53px;
 }
 
 .intro__advantages-list {
@@ -106,17 +106,17 @@
   letter-spacing: 0.015em;
 }
 
-.guarantee-item {
+.intro__advantages-guarantee {
   width: 195px;
   margin-left: -2px;
 }
 
-.performance-item {
+.intro__advantages-performance {
   width: 170px;
   margin-left: 16px;
 }
 
-.base-item {
+.intro__advantages-base {
   width: 235px;
   margin-right: -12px;
 }
@@ -127,17 +127,17 @@
   position: absolute;
 }
 
-.guarantee-item .intro__advantages-img {
+.intro__advantages-guarantee .intro__advantages-img {
   left: 67px;
   top: -89px;
 }
 
-.performance-item .intro__advantages-img {
+.intro__advantages-performance .intro__advantages-img {
   left: 49px;
   top: -72px;
 }
 
-.base-item .intro__advantages-img {
+.intro__advantages-base .intro__advantages-img {
   left: 82px;
   top: -92px;
 }
@@ -235,26 +235,26 @@
     letter-spacing: 0;
   }
 
-  .performance-item .intro__advantages-text {
+  .intro__advantages-performance .intro__advantages-text {
     width: 56%;
     padding-left: 2px;
   }
 
-  .base-item .intro__advantages-text {
+  .intro__advantages-base .intro__advantages-text {
     width: 85%;
   }
 
-  .guarantee-item .intro__advantages-img {
+  .intro__advantages-guarantee .intro__advantages-img {
     left: 37%;
     top: 22px;
   }
 
-  .performance-item .intro__advantages-img {
+  .intro__advantages-performance .intro__advantages-img {
     left: 34%;
     top: 38px;
   }
 
-  .base-item .intro__advantages-img {
+  .intro__advantages-base .intro__advantages-img {
     left: 35%;
     top: 20px;
   }
@@ -384,19 +384,19 @@
     transform: scale(1);
   }
 
-  .guarantee-item .intro__advantages-img {
+  .intro__advantages-guarantee .intro__advantages-img {
     left: calc(50% - 32px);
     top: 30px;
     transform: scale(1.2);
   }
 
-  .performance-item .intro__advantages-img {
+  .intro__advantages-performance .intro__advantages-img {
     left: calc(50% - 37px);
     top: 48px;
     transform: scale(1.2);
   }
 
-  .base-item .intro__advantages-img {
+  .intro__advantages-base .intro__advantages-img {
     left: calc(50% - 37px);
     top: 30px;
     transform: scale(1.2);

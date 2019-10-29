@@ -21,10 +21,9 @@
     <div class="page-header__wrap">
       <div class="page-header__nav-wrap">
         <a class="page-header__logo-link">
-          <img src="img/logo-desktop.png" class="logo-desktop" alt="Логотип МонтСтрой" width="141" height="60">
-          <img src="img/logo-tablet.png" class="logo-tablet" alt="Логотип МонтСтрой" width="86" height="37">
+          <img src="img/logo-desktop.png" alt="Логотип МонтСтрой" width="141" height="60">
         </a>
-        <button class="page-header__nav-button" type="button"> </button>
+        <button class="page-header__nav-button" type="button" aria-label="Меню навигации"> </button>
         <ul class="page-header__nav-list no-js page-header__nav-list--close">
           <li class="page-header__item"><a href="#">главная</a></li>
           <li class="page-header__item"><a href="#">услуги</a></li>
@@ -59,19 +58,19 @@
         </p>
         <div class="intro__advantages-container swiper-container">
           <ul class="intro__advantages-list swiper-wrapper">
-            <li class="intro__advantages-item guarantee-item swiper-slide">
+            <li class="intro__advantages-item intro__advantages-guarantee swiper-slide">
               <svg class="intro__advantages-img" width="62" height="64">
                 <use xlink:href="#like"></use>
               </svg>
               <span class="intro__advantages-text">Гарантированное высокое качество продукции</span>
             </li>
-            <li class="intro__advantages-item performance-item swiper-slide">
+            <li class="intro__advantages-item intro__advantages-performance swiper-slide">
               <svg class="intro__advantages-img" width="74" height="49">
                 <use xlink:href="#handshake"></use>
               </svg>
               <span class="intro__advantages-text">Исполнение всех сроков и обязательств</span>
             </li>
-            <li class="intro__advantages-item base-item swiper-slide">
+            <li class="intro__advantages-item intro__advantages-base swiper-slide">
               <svg class="intro__advantages-img" width="70" height="69">
                 <use xlink:href="#settings"></use>
               </svg>
@@ -81,9 +80,6 @@
         </div>
 
         <div class="intro__slider-dots">
-          <div class="intro__dot"></div>
-          <div class="intro__dot dot-active"></div>
-          <div class="intro__dot"></div>
         </div>
 
       </div>
@@ -93,92 +89,84 @@
         <h2 class="services__title"> услуги </h2>
         <ul class="services__section-list">
 
-          <li class="services__section-item services__section-item--active">
+          <li class="services__section-item services__section-design services__section-item--active">
             <h3 class="services__section-title">Проектирование</h3>
             <ul class="services__list ">
-              <li><a href="#">Предварительная разработка концепции<span class="services__item-desktop">;</span></a></li>
-              <li><a href="#">Установка систем энергоснабжения<span class="services__item-desktop">;</span></a></li>
-              <li><a href="#">Оформление задания на проектирование<span class="services__item-desktop">;</span></a></li>
-              <li><a href="#">Разработка всей рабочей и проектной документации<span class="services__item-desktop">;</span></a></li>
-              <li><a href="#">Окончательное согласование проекта энергоснабжения в органах гос.надзора<span class="services__item-desktop">;</span></a></li>
-              <li><a href="#">Обеспечение авторского надзора <br class="services__br-tablet"> на протяжении всего строительства <span class="services__item-desktop">(контроль за соблюдением всех норм <br>  и проектных разработок)</span><span class="services__item-desktop">.</span></a></li>
+              <li><a class="services__item-link services__development-link" href="#">Предварительная разработка концепции<span class="services__item-desktop">;</span></a></li>
+              <li><a class="services__item-link" href="#">Установка систем энергоснабжения<span class="services__item-desktop">;</span></a></li>
+              <li><a class="services__item-link" href="#">Оформление задания на проектирование<span class="services__item-desktop">;</span></a></li>
+              <li><a class="services__item-link services__documentation-link" href="#">Разработка всей рабочей и проектной документации<span class="services__item-desktop">;</span></a></li>
+              <li><a class="services__item-link services__agreement-link" href="#">Окончательное согласование проекта энергоснабжения в органах гос.надзора<span class="services__item-desktop">;</span></a></li>
+              <li><a class="services__item-link services__supervision-link" href="#">Обеспечение авторского надзора <br class="services__br-tablet"> на протяжении всего строительства <span class="services__item-desktop">(контроль за соблюдением всех норм <br>  и проектных разработок)</span><span class="services__item-desktop">.</span></a></li>
             </ul>
           </li>
 
-          <li class="services__section-item">
+          <li class="services__section-item services__section-search">
             <h3 class="services__section-title">Инженерные изыскания</h3>
             <ul class="services__list">
-              <li><a href="#">Инженерно-геодезические изыскания<span class="services__item-desktop">;</span></a></li>
-              <li><a href="#">Инженерно-геофизические изыскания<span class="services__item-desktop">;</span></a></li>
-              <li><a href="#">Инженерно-топографические изыскания<span class="services__item-desktop">;</span></a></li>
-              <li><a href="#">Инженерно-геологические изыскания<span class="services__item-desktop">;</span></a></li>
-              <li><a href="#">Изыскания грунтовых строительных материалов (проведение опытных полевых работ и обследование земляных сооружений)<span class="services__item-desktop">;</span></a></li>
-              <li><a href="#">Инженерно-экологические (полевые работы, а также лабораторные и камеральные работы)<span class="services__item-desktop">;</span></a></li>
-              <li><a href="#">Археологические<span class="services__item-desktop">;</span></a></li>
-              <li><a href="#">Кадастровые и землеустроительные<span class="services__item-desktop">.</span></a></li>
+              <li><a class="services__item-link" href="#">Инженерно-геодезические изыскания<span class="services__item-desktop">;</span></a></li>
+              <li><a class="services__item-link" href="#">Инженерно-геофизические изыскания<span class="services__item-desktop">;</span></a></li>
+              <li><a class="services__item-link" href="#">Инженерно-топографические изыскания<span class="services__item-desktop">;</span></a></li>
+              <li><a class="services__item-link" href="#">Инженерно-геологические изыскания<span class="services__item-desktop">;</span></a></li>
+              <li><a class="services__item-link" href="#">Изыскания грунтовых строительных материалов (проведение опытных полевых работ и обследование земляных сооружений)<span class="services__item-desktop">;</span></a></li>
+              <li><a class="services__item-link" href="#">Инженерно-экологические (полевые работы, а также лабораторные и камеральные работы)<span class="services__item-desktop">;</span></a></li>
+              <li><a class="services__item-link" href="#">Археологические<span class="services__item-desktop">;</span></a></li>
+              <li><a class="services__item-link" href="#">Кадастровые и землеустроительные<span class="services__item-desktop">.</span></a></li>
             </ul>
           </li>
 
-          <li class="services__section-item">
+          <li class="services__section-item services__section-installation">
             <h3 class="services__section-title">Строительно-монтажные работы</h3>
             <ul class="services__list">
-              <li><a href="#">Строительство и реконструкция подстанций до 500 кВ и распределительных устройств станций до 500 кВ<span class="services__item-desktop">;</span></a></li>
-              <li><a href="#">Строительство распределительных пунктов<span class="services__item-desktop">;</span></a>
+              <li><a class="services__item-link" href="#">Строительство и реконструкция подстанций до 500 кВ и распределительных устройств станций до 500 кВ<span class="services__item-desktop">;</span></a></li>
+              <li><a class="services__item-link" href="#">Строительство распределительных пунктов<span class="services__item-desktop">;</span></a>
               </li>
-              <li><a href="#">Внедрение систем автоматизации управления оборудованием подстанций до 500 кВ<span
-                    class="services__item-desktop">;</span></a></li>
-              <li><a href="#">Вынос действующих кабелей из строительной зоны<span
-                    class="services__item-desktop">;</span></a></li>
-              <li><a href="#">Обеспечение временного электроснабжения<span class="services__item-desktop">;</span></a>
+              <li><a class="services__item-link" href="#">Внедрение систем автоматизации управления оборудованием подстанций до 500 кВ<span class="services__item-desktop">;</span></a></li>
+              <li><a class="services__item-link" href="#">Вынос действующих кабелей из строительной зоны<span class="services__item-desktop">;</span></a></li>
+              <li><a class="services__item-link" href="#">Обеспечение временного электроснабжения<span class="services__item-desktop">;</span></a>
               </li>
-              <li><a href="#">Монтаж электрооборудования<span class="services__item-desktop">.</span></a></li>
+              <li><a class="services__item-link" href="#">Монтаж электрооборудования<span class="services__item-desktop">.</span></a></li>
               </ul>
           </li>
 
-          <li class="services__section-item">
+          <li class="services__section-item services__section-support">
             <h3 class="services__section-title">Эксплуатация и сервисное обслуживание</h3>
             <ul class="services__list">
-              <li><a href="#">Эксплуатация электрики зданий и энергоустановок, снабжающих энергией эксплуатируемые
-                  сооружения<span class="services__item-desktop">;</span></a></li>
-              <li><a href="#">Эксплуатация систем отопления объектов с проведением плановых сезонных
+              <li><a class="services__item-link" href="#">Эксплуатация электрики зданий и энергоустановок, снабжающих энергией эксплуатируемые сооружения<span class="services__item-desktop">;</span></a></li>
+              <li><a class="services__item-link" href="#">Эксплуатация систем отопления объектов с проведением плановых сезонных
                   мероприятий<span class="services__item-desktop">;</span></a></li>
-              <li><a href="#">Эксплуатация систем ХВС и ГВС эксплуатируемого здания<span
+              <li><a class="services__item-link" href="#">Эксплуатация систем ХВС и ГВС эксплуатируемого здания<span
                     class="services__item-desktop">;</span></a></li>
-              <li><a href="#">Сервисное обслуживание и эксплуатация систем водоснабжения, водоподготовки и фильтрации в
-                  обслуживаемом здании<span class="services__item-desktop">;</span></a></li>
-              <li><a href="#">Обслуживание системы дренажа, канализации и ливнестоков: прочистка, промывка, вывоз отходов за территорию <span class="services__item-desktop">;</span></a></li>
-              <li><a href="#">Сезонная перенастройка автоматических элементов систем эксплуатации здания и
-                  другое<span class="services__item-desktop">.</span></a></li>
-              </ul>
+              <li><a class="services__item-link" href="#">Сервисное обслуживание и эксплуатация систем водоснабжения, водоподготовки и фильтрации в обслуживаемом здании<span class="services__item-desktop">;</span></a></li>
+              <li><a class="services__item-link" href="#">Обслуживание системы дренажа, канализации и ливнестоков: прочистка, промывка, вывоз отходов за территорию <span class="services__item-desktop">;</span></a></li>
+              <li><a class="services__item-link" href="#">Сезонная перенастройка автоматических элементов систем эксплуатации здания и другое<span class="services__item-desktop">.</span></a></li>
+            </ul>
           </li>
 
-          <li class="services__section-item">
+          <li class="services__section-item services__section-laboratory">
             <h3 class="services__section-title">Электролаборатория</h3>
             <ul class="services__list">
-              <li><a href="#">Проверка состояния различных элементов устройств заземления<span
+              <li><a class="services__item-link" href="#">Проверка состояния различных элементов устройств заземления<span
                     class="services__item-desktop">;</span></a></li>
-              <li> <a href="#">Проверка наличия цепи, проведение замеров сопротивлений (переходных) между заземляющими проводниками заземлителями, проверку металлосвязи<span class="services__item-desktop">;</span></a>
+              <li> <a class="services__item-link" href="#">Проверка наличия цепи, проведение замеров сопротивлений (переходных) между заземляющими проводниками заземлителями, проверку металлосвязи<span class="services__item-desktop">;</span></a>
               </li>
-              <li><a href="#">Проверка систем молниезащиты<span class="services__item-desktop">;</span></a></li>
-              <li><a href="#">Измерение сопротивления изоляции электрических кабелей, аппаратов, электропроводок и электрооборудования<span class="services__item-desktop">;</span></a></li>
-              <li><a href="#">Измерение сопротивления заземления и заземляющих устройств<span
-                    class="services__item-desktop">;</span></a></li>
-              <li><a href="#">Поиск кабельных трасс, мест повреждения и «прожиг кабеля»<span
-                    class="services__item-desktop">;</span></a></li>
-              <li><a href="#">Проведение всех необходимых испытаний и измерений для кабельных линий, включая кабель с
-                  изоляцией из сшитого полиэтилена до 220 кВ<span class="services__item-desktop">.</span></a></li>
+              <li><a class="services__item-link" href="#">Проверка систем молниезащиты<span class="services__item-desktop">;</span></a></li>
+              <li><a class="services__item-link" href="#">Измерение сопротивления изоляции электрических кабелей, аппаратов, электропроводок и электрооборудования<span class="services__item-desktop">;</span></a></li>
+              <li><a class="services__item-link" href="#">Измерение сопротивления заземления и заземляющих устройств<span class="services__item-desktop">;</span></a></li>
+              <li><a class="services__item-link" href="#">Поиск кабельных трасс, мест повреждения и «прожиг кабеля»<span class="services__item-desktop">;</span></a></li>
+              <li><a class="services__item-link" href="#">Проведение всех необходимых испытаний и измерений для кабельных линий, включая кабель с изоляцией из сшитого полиэтилена до 220 кВ<span class="services__item-desktop">.</span></a></li>
               </ul>
           </li>
 
-          <li class="services__section-item">
+          <li class="services__section-item services__section-connection">
               <h3 class="services__section-title">Услуги по технологическому присоединению</h3>
             <ul class="services__list">
-              <li><a href="#">Оказание технико-экономического консалтинга в составлении договора на технологическое присоединение <br> мощности потребителя к сетям электросетевых компаний<span class="services__item-desktop">;</span></a></li>
-              <li><a href="#">Обследование присоединяемых устройств ответственным лицом по государственному надзору при участии сетевого оператора и собственника устройства<span class="services__item-desktop">;</span></a>
+              <li><a class="services__item-link" href="#">Оказание технико-экономического консалтинга в составлении договора на технологическое присоединение <br> мощности потребителя к сетям электросетевых компаний<span class="services__item-desktop">;</span></a></li>
+              <li><a class="services__item-link" href="#">Обследование присоединяемых устройств ответственным лицом по государственному надзору при участии сетевого оператора и собственника устройства<span class="services__item-desktop">;</span></a>
               </li>
-              <li><a href="#">Фактическое присоединение объектов заявителя к сетям оператора<span class="services__item-desktop">;</span></a></li>
-              <li><a href="#">Составление и согласование необходимой технической документации для ввода в эксплуатацию объекта<span class="services__item-desktop">;</span></a></li>
-              <li><a href="#">Ввод присоединенного объекта в эксплуатацию<span class="services__item-desktop">.</span></a></li>
+              <li><a class="services__item-link" href="#">Фактическое присоединение объектов заявителя к сетям оператора<span class="services__item-desktop">;</span></a></li>
+              <li><a class="services__item-link" href="#">Составление и согласование необходимой технической документации для ввода в эксплуатацию объекта<span class="services__item-desktop">;</span></a></li>
+              <li><a class="services__item-link" href="#">Ввод присоединенного объекта в эксплуатацию<span class="services__item-desktop">.</span></a></li>
             </ul>
           </li>
         </ul>
@@ -238,8 +226,8 @@
       <div class="partners__wrap">
         <h2 class="partners__title"> <span class="partners__title-tablet">наши</span> партнеры </h2>
         <div class="partners__buttons-container">
-          <button type="button" class="partners__button partners__button-previous" aria-label="previous"></button>
-          <button type="button" class="partners__button partners__button-next" aria-label="next"></button>
+          <button type="button" class="partners__button partners__button-previous" aria-label="Предыдущий слайд"></button>
+          <button type="button" class="partners__button partners__button-next" aria-label="Следующий слайд"></button>
         </div>
 
         <div class="partners__list-container swiper-container">
@@ -272,10 +260,6 @@
         </div>
 
         <div class="partners__slider-dots">
-          <div class="partners__dot"></div>
-          <div class="partners__dot"></div>
-          <div class="partners__dot"></div>
-          <div class="partners__dot"></div>
         </div>
       </div>
     </section>
@@ -291,7 +275,7 @@
 
           <div class="page-footer__first-column">
             <a class="page-footer__logo-link">
-              <img src="img/logo-desktop.png" class="logo-desktop" alt="Логотип МонтСтрой" width="141" height="60">
+              <img src="img/logo-desktop.png" alt="Логотип МонтСтрой" width="141" height="60">
             </a>
             <p class="page-footer__company">ЗАО «НCП «МонтCтрой»</p>
             <nav class="page-footer__nav">
