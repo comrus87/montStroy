@@ -15,6 +15,17 @@ document.addEventListener('DOMContentLoaded', function () {
   var phone = document.getElementById('form-phone');
   var email = document.getElementById('form-email');
   var form = document.querySelector('.page-footer__form');
+  var btnFeedBack = document.querySelector('.page-header__feedback');
+  var endText = document.querySelector('.page-footer__copyright');
+
+  function onBtnFeedBackClick() {
+    endText.scrollIntoView({behavior: 'smooth'});
+  }
+
+  if (btnFeedBack) {
+    btnFeedBack.addEventListener('click', onBtnFeedBackClick);
+  }
+
 
   btnNav.addEventListener('click', function () {
     navList.classList.toggle('page-header__nav-list--close');

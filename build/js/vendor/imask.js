@@ -658,15 +658,15 @@
 
   var userAgent = getBuiltIn('navigator', 'userAgent') || '';
 
-  // https://github.com/zloirock/core-js/issues/280
-   // eslint-disable-next-line unicorn/no-unsafe-regex
+    // https://github.com/zloirock/core-js/issues/280
+    // eslint-disable-next-line unicorn/no-unsafe-regex
 
 
   var webkitStringPadBug = /Version\/10\.\d+(\.\d+)?( Mobile\/\w+)? Safari\//.test(userAgent);
 
   var $padEnd = stringPad.end;
 
-   // `String.prototype.padEnd` method
+  // `String.prototype.padEnd` method
   // https://tc39.github.io/ecma262/#sec-string.prototype.padend
 
 
@@ -684,7 +684,7 @@
 
   var $padStart = stringPad.start;
 
-   // `String.prototype.padStart` method
+  // `String.prototype.padStart` method
   // https://tc39.github.io/ecma262/#sec-string.prototype.padstart
 
 
