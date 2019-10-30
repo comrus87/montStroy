@@ -25,10 +25,10 @@
       .cls-1 {
         fill: #8d8d8d;
         fill-rule: evenodd;
-        filter: url(#filter);
+        filter: url(#letter-mob);
       }
     </style>
-    <filter id="filter" x="1345" y="4481.44" width="16" height="10.97" filterUnits="userSpaceOnUse">
+    <filter id="letter-mob" x="1345" y="4481.44" width="16" height="10.97" filterUnits="userSpaceOnUse">
       <feFlood result="flood" flood-color="#8d8d8d"/>
       <feComposite result="composite" operator="in" in2="SourceGraphic"/>
       <feBlend result="blend" in2="SourceGraphic"/>
@@ -38,10 +38,10 @@
       .cls-1 {
         fill: #666;
         fill-rule: evenodd;
-        filter: url(#filter);
+        filter: url(#letter-desk);
       }
     </style>
-    <filter id="filter" x="1345" y="4481.44" width="16" height="10.97" filterUnits="userSpaceOnUse">
+    <filter id="letter-desk" x="1345" y="4481.44" width="16" height="10.97" filterUnits="userSpaceOnUse">
       <feFlood result="flood" flood-color="#00ceb9"/>
       <feComposite result="composite" operator="in" in2="SourceGraphic"/>
       <feBlend result="blend" in2="SourceGraphic"/>
@@ -51,10 +51,10 @@
       .cls-1 {
         fill: #8d8d8d;
         fill-rule: evenodd;
-        filter: url(#filter);
+        filter: url(#phone-mob);
       }
     </style>
-    <filter id="filter" x="1345" y="4540.81" width="13.03" height="11.94" filterUnits="userSpaceOnUse">
+    <filter id="phone-mob" x="1345" y="4540.81" width="13.03" height="11.94" filterUnits="userSpaceOnUse">
       <feFlood result="flood" flood-color="#8d8d8d"/>
       <feComposite result="composite" operator="in" in2="SourceGraphic"/>
       <feBlend result="blend" in2="SourceGraphic"/>
@@ -64,10 +64,10 @@
       .cls-1 {
         fill: #666;
         fill-rule: evenodd;
-        filter: url(#filter);
+        filter: url(#phone-desk);
       }
     </style>
-    <filter id="filter" x="1345" y="4540.81" width="13.03" height="11.94" filterUnits="userSpaceOnUse">
+    <filter id="phone-desk" x="1345" y="4540.81" width="13.03" height="11.94" filterUnits="userSpaceOnUse">
       <feFlood result="flood" flood-color="#00ceb9"/>
       <feComposite result="composite" operator="in" in2="SourceGraphic"/>
       <feBlend result="blend" in2="SourceGraphic"/>
