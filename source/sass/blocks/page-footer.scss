@@ -228,6 +228,19 @@
   padding: 6px 0;
 }
 
+.page-footer__form-textarea {
+  border: none;
+  border-bottom: 1px solid #cccccc;
+  outline: none;
+  width: 100%;
+  font-size: 100%;
+  display: block;
+  padding: 5px 0;
+  resize: none;
+  height: 30px;
+  overflow-y: hidden;
+}
+
 .page-footer__form-name,
 .page-footer__form-phone {
   width: calc(50% - 22px);
@@ -291,6 +304,7 @@
   box-shadow: 0 3px rgba(0, 0, 0, 0.3);
   margin: 37px auto 0;
   padding: 14px 0 17px;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -363,6 +377,11 @@
 
   .page-footer__form-input {
     padding: 3px 0;
+  }
+
+  .page-footer__form-textarea {
+    padding: 3px 0;
+    height: 25px;
   }
 
   .page-footer__form-email {
@@ -582,6 +601,10 @@
 
   .page-footer__form-input {
     padding: 4px 0;
+  }
+
+  .page-footer__form-textarea {
+    height: 24px;
   }
 
   .page-footer__form-phone label {
