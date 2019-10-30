@@ -16,16 +16,31 @@ document.addEventListener('DOMContentLoaded', function () {
   var email = document.getElementById('form-email');
   var form = document.querySelector('.page-footer__form');
   var btnFeedBack = document.querySelector('.page-header__feedback');
-  var endText = document.querySelector('.page-footer__copyright');
+  var btnFeedBackIntro = document.querySelector('.intro__link-сontact');
+  var btnServices = document.querySelector('.intro__link-servcies');
+  var services = document.getElementById('services');
 
-  function onBtnFeedBackClick() {
-    endText.scrollIntoView({behavior: 'smooth'});
+  function onBtnFeedBackClick(evt) {
+    evt.preventDefault();
+    form.scrollIntoView({behavior: 'smooth'});
+  }
+
+  function onBtnServicesClick(evt) {
+    evt.preventDefault();
+    services.scrollIntoView({behavior: 'smooth'});
   }
 
   if (btnFeedBack) {
     btnFeedBack.addEventListener('click', onBtnFeedBackClick);
   }
 
+  if (btnFeedBackIntro) {
+    btnFeedBackIntro.addEventListener('click', onBtnFeedBackClick);
+  }
+
+  if (btnServices) {
+    btnServices.addEventListener('click', onBtnServicesClick);
+  }
 
   btnNav.addEventListener('click', function () {
     navList.classList.toggle('page-header__nav-list--close');
