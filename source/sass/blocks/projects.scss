@@ -54,68 +54,43 @@
   width: calc(25% - 2.5px);
   min-height: 290px;
   margin-bottom: 4px;
+
   position: relative;
   padding: 53px 12px 25px 30px;
 }
 
-.projects__item:nth-child(6n+1) {
-  background: url("../img/stadium-desktop.jpg") no-repeat center;
-  background-size: cover;
-  margin-right: 3px;
-}
-
-.projects__item:nth-child(6n+2) {
-  background: url("../img/business-centr-desktop.jpg") no-repeat center;
-  background-size: cover;
-  margin-right: 4px;
-
-  .projects__item-title {
-    margin: 0 0 23px 0;
-  }
-}
-
-.projects__item:nth-child(6n+3) {
-  background: url("../img/kino-desktop.jpg") no-repeat center;
-  background-size: cover;
-  margin-right: 3px;
-
-  .projects__item-title {
-    margin: 0 0 23px 0;
-  }
-}
-
-.projects__item:nth-child(6n+4) {
-  background: url("../img/medial-desktop.jpg") no-repeat center;
-  background-size: cover;
-  margin-right: 0;
-}
-
-.projects__item:nth-child(6n+5) {
-  background: url("../img/company-desktop.jpg") no-repeat center;
-  background-size: cover;
+.projects__item--big {
   width: calc(50% - 2px);
-  margin-right: 4px;
-  padding: 40px 105px 25px 30px;
-
-  .projects__item-title {
-    font-size: 32px;
-    line-height: 42px;
-    margin: 0 0 32px 0;
-  }
-}
-
-.projects__item:nth-child(6n+6) {
-  background: url("../img/buratino-desktop.jpg") no-repeat center;
-  background-size: cover;
-  width: calc(50% - 2px);
-  margin-right: 0;
-  padding: 40px 78px 25px 30px;
+  padding: 40px 75px 25px 30px;
 
   .projects__item-title {
     font-size: 32px;
     line-height: 42px;
     margin: 0 0 30px 0;
   }
+}
+
+.projects__item-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.projects__stadium,
+.projects__kino {
+  margin-right: 3px;
+}
+
+.projects__business-centr,
+.projects__company {
+  margin-right: 4px;
+}
+
+.projects__item:last-child {
+  margin-right: 0;
 }
 
 .projects__item-link {
@@ -170,34 +145,36 @@
     width: 100%;
     min-height: 180px;
     margin-bottom: 10px;
-    padding: 45px 70px 25px 44px;
+    padding: 45px 90px 25px 44px;
   }
 
-  .projects__item:nth-child(6n+1) {
-    background: url("../img/stadium-tablet.jpg") no-repeat center;
-    background-size: cover;
-    margin-right: 0;
-    padding-right: 90px;
+  .projects__item--big {
+    width: 100%;
+    padding: 40px 75px 25px 30px;
+
+    .projects__item-title {
+      font-size: 24px;
+      line-height: 24px;
+      margin: 0 0 12px 0;
+    }
   }
 
-  .projects__item:nth-child(6n+2) {
-    background: url("../img/business-centr-tablet.jpg") no-repeat center;
-    background-size: cover;
+  .projects__stadium {
     margin-right: 0;
+  }
+
+  .projects__business-centr {
+    padding: 43px 100px 25px 42px;
     margin-bottom: 8px;
-    padding-top: 43px;
-    padding-left: 42px;
-    padding-right: 100px;
+    margin-right: 0;
 
     .projects__item-title {
       margin: 0 0 16px 0;
     }
   }
 
-  .projects__item:nth-child(6n+3) {
-    background: url("../img/kino-tablet.jpg") no-repeat center;
+  .projects__kino {
     margin-right: 0;
-    background-size: cover;
     padding-top: 39px;
     padding-right: 170px;
 
@@ -206,10 +183,7 @@
     }
   }
 
-  .projects__item:nth-child(6n+4) {
-    background: url("../img/medial-tablet.jpg") no-repeat center;
-    margin-right: 0;
-    background-size: cover;
+  .projects__medial {
     padding-top: 34px;
     padding-left: 42px;
     padding-right: 120px;
@@ -219,42 +193,31 @@
     }
   }
 
-  .projects__item:nth-child(6n+5) {
-    background: url("../img/company-tablet.jpg") no-repeat center;
-    background-size: cover;
-    width: 100%;
-    margin-right: 0;
+  .projects__company {
     padding-top: 45px;
     padding-left: 42px;
+    margin-right: 0;
 
     .projects__item-title {
-      font-size: 24px;
-      line-height: 24px;
       margin: 0 0 12px 0;
     }
   }
 
-  .projects__desktop {
-    display: none;
-  }
-
-  .projects__item:nth-child(6n+6) {
-    background: url("../img/buratino-tablet.jpg") no-repeat center;
-    background-size: cover;
-    width: 100%;
-    margin-right: 0;
+  .projects__buratino {
     padding-top: 45px;
     padding-left: 43px;
     padding-right: 55px;
 
     .projects__item-title {
-      font-size: 24px;
-      line-height: 24px;
       margin: 0 0 11px 0;
     }
   }
 
   .projects__item-link {
+    display: none;
+  }
+
+  .projects__desktop {
     display: none;
   }
 
@@ -295,16 +258,29 @@
     align-items: center;
   }
 
-  .projects__item:nth-child(6n+1) {
-    background: url("../img/stadium-mobile.jpg") no-repeat center;
-    background-size: cover;
+  .projects__item--big {
+    padding: 0;
+
+    .projects__item-title {
+      font-size: 16px;
+      margin: 0 auto;
+    }
+  }
+
+  .projects__stadium {
     padding-right: 0;
   }
 
-  .projects__item:nth-child(6n+2) {
-    background: url("../img/business-centr-mobile.jpg") no-repeat center;
-    background-size: cover;
+  .projects__business-centr {
+    padding: 0;
     margin-bottom: 10px;
+
+    .projects__item-title {
+      margin: 0 auto;
+    }
+  }
+
+  .projects__kino {
     padding: 0;
 
     .projects__item-title {
@@ -312,46 +288,10 @@
     }
   }
 
-  .projects__item:nth-child(6n+3) {
-    background: url("../img/kino-mobile.jpg") no-repeat center;
-    background-size: cover;
+  .projects__medial {
     padding: 0;
 
     .projects__item-title {
-      margin: 0 auto;
-    }
-  }
-
-  .projects__item:nth-child(6n+4) {
-    background: url("../img/medial-mobile.jpg") no-repeat center;
-    background-size: cover;
-    padding: 0;
-
-    .projects__item-title {
-      margin: 0 auto;
-    }
-  }
-
-  .projects__item:nth-child(6n+5) {
-    background: url("../img/company-mobile.jpg") no-repeat center;
-    background-size: cover;
-    padding: 0;
-
-    .projects__item-title {
-      font-size: 16px;
-      line-height: 24px;
-      margin: 0 auto;
-    }
-  }
-
-  .projects__item:nth-child(6n+6) {
-    background: url("../img/buratino-mobile.jpg") no-repeat center;
-    background-size: cover;
-    padding: 0;
-
-    .projects__item-title {
-      font-size: 16px;
-      line-height: 24px;
       margin: 0 auto;
     }
   }

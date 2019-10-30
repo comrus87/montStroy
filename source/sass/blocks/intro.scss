@@ -1,7 +1,12 @@
 .intro {
-  background: url("../img/bg-desktop.jpg") no-repeat 50% 100%;
+  background: url("../img/bg-desktop@1x.jpg") no-repeat 50% 100%;
   background-size: cover;
   background-color: $black-color;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/bg-desktop@2x.jpg") no-repeat 50% 100%;
+    background-size: cover;
+  }
 }
 
 .intro__about-company {
@@ -154,16 +159,20 @@
   display: none;
 }
 
-
 @media (max-width: $tablet-width) {
   .intro {
     background: #fefdff;
   }
 
   .intro__wrap {
-    background: url("../img/bg-tablet.jpg") no-repeat 50% 100%;
+    background: url("../img/bg-tablet@1x.jpg") no-repeat 50% 100%;
     background-size: cover;
     background-color: $black-color;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/bg-tablet@2x.jpg") no-repeat 50% 100%;
+      background-size: cover;
+    }
   }
 
   .intro__about-company {
@@ -298,9 +307,14 @@
   }
 
   .intro__wrap {
-    background: url("../img/bg-mobile.jpg") no-repeat 50% 100%;
+    background: url("../img/bg-mobile@1x.jpg") no-repeat 50% 100%;
     background-size: cover;
     background-color: $black-color;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/bg-mobile@2x.jpg") no-repeat 50% 100%;
+      background-size: cover;
+    }
   }
 
   .intro__about-company {
