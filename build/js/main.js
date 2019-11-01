@@ -46,6 +46,14 @@ document.addEventListener('DOMContentLoaded', function () {
     navList.classList.toggle('page-header__nav-list--close');
   });
 
+  if (!navList.classList.contains('page-header__nav-list--close')) {
+    document.addEventListener('click', function (evt) {
+      if (!navList.contains(evt.target)) {
+        navList.classList.add('page-header__nav-list--close');
+      }
+    });
+  }
+
   function removeNoJs(block) {
     block.classList.remove('no-js');
   }
