@@ -95,7 +95,7 @@
 
 .intro__advantages {
   @include wrap-desktop;
-  padding-bottom: 53px;
+  padding-bottom: 57px;
 }
 
 .intro__advantages-list {
@@ -118,12 +118,11 @@
 
 .intro__advantages-performance {
   width: 170px;
-  margin-left: 16px;
+  margin-left: 28px;
 }
 
 .intro__advantages-base {
   width: 235px;
-  margin-right: -12px;
 }
 
 .intro__advantages-img {
@@ -143,7 +142,7 @@
 }
 
 .intro__advantages-base .intro__advantages-img {
-  left: 82px;
+  left: 94px;
   top: -92px;
 }
 
@@ -153,6 +152,7 @@
   font-size: 15px;
   line-height: 20px;
   color: #b4b5b7;
+  display: block;
 }
 
 .br-tablet {

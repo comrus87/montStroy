@@ -68,6 +68,18 @@
   }
 }
 
+.partners__img-ava {
+  margin: 8px 0 0 -2px;
+}
+
+.partners__img-mirror {
+  margin: 12px 0 0 0;
+}
+
+.partners__img-teplodom {
+  margin: 6px 0 0 0;
+}
+
 .partners__item a {
   display: flex;
   justify-content: center;
@@ -171,7 +183,7 @@
   }
 
   .partners__img-mirror {
-    margin-top: 35px;
+    margin-top: 42px;
   }
 
   .partners__list-container .swiper-slide-prev {
@@ -252,6 +264,10 @@
   .partners__item a {
     min-height: 135px;
     padding-left: 6px;
+  }
+
+  .partners__img-ava {
+    margin: 8px 0 0 0;
   }
 
   .partners__img-mirror {
