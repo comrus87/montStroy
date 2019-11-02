@@ -105,7 +105,7 @@ gulp.task('js-vendor', function () {
     .pipe(uglify())
     .pipe(rename('vendor.min.js'))
     .pipe(sourcemap.write(''))
-    .pipe(gulp.dest('build/js/vendor'));
+    .pipe(gulp.dest('build/js'));
 });
 
 gulp.task("copy", function () {
@@ -113,6 +113,7 @@ gulp.task("copy", function () {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/**",
+    "!source/js/vendor/**",
     "source//*.ico"
     ], {
       base: "source"

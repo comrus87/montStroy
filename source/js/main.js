@@ -84,7 +84,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   };
 
-  var phoneModalMask = IMask(phone, {mask: '+{7}(000)000-00-00'});
+  if (phone) {
+    var phoneModalMask = IMask(phone, {mask: '+{7}(000)000-00-00'});
+  }
 
   var onPhoneValidate = function () {
     var value = phone.value.trim();

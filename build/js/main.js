@@ -46,13 +46,11 @@ document.addEventListener('DOMContentLoaded', function () {
     navList.classList.toggle('page-header__nav-list--close');
   });
 
-  if (!navList.classList.contains('page-header__nav-list--close')) {
-    document.addEventListener('click', function (evt) {
-      if (!navList.contains(evt.target)) {
-        navList.classList.add('page-header__nav-list--close');
-      }
-    });
-  }
+  document.body.addEventListener('click', function (evt) {
+    if (!navList.contains(evt.target) && evt.target !== btnNav) {
+      navList.classList.add('page-header__nav-list--close');
+    }
+  });
 
   function removeNoJs(block) {
     block.classList.remove('no-js');
@@ -86,7 +84,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   };
 
-  var phoneModalMask = IMask(phone, {mask: '+{7}(000)000-00-00'});
+  if (phone) {
+    var phoneModalMask = IMask(phone, {mask: '+{7}(000)000-00-00'});
+  }
 
   var onPhoneValidate = function () {
     var value = phone.value.trim();
