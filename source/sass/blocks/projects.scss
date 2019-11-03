@@ -2,6 +2,7 @@
   @include wrap-desktop;
   padding-top: 61px;
   position: relative;
+  padding-right: 11px;
 }
 
 .projects__title {
@@ -56,16 +57,17 @@
 }
 
 .projects__item {
-  width: calc(25% - 2.5px);
+  width: calc(25% - 3.5px);
   min-height: 290px;
   margin-bottom: 4px;
+  margin-right: 4px;
 
   position: relative;
   padding: 53px 12px 25px 30px;
 }
 
 .projects__item--big {
-  width: calc(50% - 2px);
+  width: calc(50% - 4px);
   padding: 40px 75px 25px 30px;
 
   .projects__item-title {
@@ -89,15 +91,6 @@
   margin-right: 3px;
 }
 
-.projects__business-centr,
-.projects__company {
-  margin-right: 4px;
-}
-
-.projects__item:last-child {
-  margin-right: 0;
-}
-
 .projects__item-link {
   display: block;
   width: 46px;
@@ -107,7 +100,7 @@
   border: 2px solid #76726f;
   position: absolute;
   bottom: 11px;
-  right: 10px;
+  right: 11px;
 
   &:hover,
   &:focus {
@@ -151,6 +144,7 @@
     min-height: 180px;
     margin-bottom: 10px;
     padding: 45px 90px 25px 44px;
+    margin-right: 0;
   }
 
   .projects__item--big {
@@ -171,7 +165,6 @@
   .projects__business-centr {
     padding: 43px 100px 25px 42px;
     margin-bottom: 8px;
-    margin-right: 0;
 
     .projects__item-title {
       margin: 0 0 16px 0;
@@ -201,7 +194,6 @@
   .projects__company {
     padding-top: 45px;
     padding-left: 42px;
-    margin-right: 0;
 
     .projects__item-title {
       margin: 0 0 12px 0;
