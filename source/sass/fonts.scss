@@ -31,6 +31,14 @@
 }
 
 @font-face {
+  font-weight: 700;
+  font-family: "Raleway";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/Raleway-Bold.woff2") format("woff2"), url("../fonts/Raleway-Bold.woff") format("woff");
+}
+
+@font-face {
   font-weight: 900;
   font-family: "Raleway";
   font-style: normal;

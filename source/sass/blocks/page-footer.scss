@@ -221,6 +221,7 @@
 
 .page-footer__form-input {
   border: none;
+  border-radius: 0;
   border-bottom: 1px solid #cccccc;
   outline: none;
   width: 100%;
@@ -230,6 +231,7 @@
 
 .page-footer__form-textarea {
   border: none;
+  border-radius: 0;
   border-bottom: 1px solid #cccccc;
   outline: none;
   width: 100%;
@@ -409,6 +411,12 @@
   .page-footer__form-privacy {
     font-size: 10px;
     line-height: 12.82px;
+  }
+
+  .page-footer__form-privacy {
+    display: block;
+    width: 160px;
+    margin: 0 auto;
   }
 
   .page-footer__form-note {
