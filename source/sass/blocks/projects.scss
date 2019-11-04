@@ -95,16 +95,18 @@
   display: block;
   width: 46px;
   height: 34px;
-  background: url("../img/arrow.svg") no-repeat center;
+  background: url("../img/arrow.png") no-repeat center;
   background-color: transparent;
-  border: 2px solid #76726f;
+  border: 2px solid $white-color;
+  opacity: 0.34;
   position: absolute;
   bottom: 11px;
   right: 11px;
 
   &:hover,
   &:focus {
-    background: url("../img/arrow-black.svg") no-repeat center;
+    background: url("../img/arrow-black.png") no-repeat center;
+     opacity: 1;
     background-color: $green-color;
     border: none;
   }
