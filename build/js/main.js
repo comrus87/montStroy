@@ -42,9 +42,11 @@ document.addEventListener('DOMContentLoaded', function () {
     btnServices.addEventListener('click', onBtnServicesClick);
   }
 
-  btnNav.addEventListener('click', function () {
-    navList.classList.toggle('page-header__nav-list--close');
-  });
+  if (btnNav) {
+    btnNav.addEventListener('click', function () {
+      navList.classList.toggle('page-header__nav-list--close');
+    });
+  }
 
   document.body.addEventListener('click', function (evt) {
     if (!navList.contains(evt.target) && evt.target !== btnNav) {
