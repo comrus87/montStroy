@@ -48,6 +48,15 @@
   line-height: 22px;
   color: #b6b6b7;
   margin: 0;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 46px;
+    height: 34px;
+    background-color: transparent;
+    float: right;
+  }
 }
 
 .projects__list {
@@ -63,7 +72,7 @@
   margin-right: 4px;
 
   position: relative;
-  padding: 53px 12px 25px 30px;
+  padding: 53px 12px 22px 30px;
 }
 
 .projects__item--big {
@@ -145,13 +154,13 @@
     width: 100%;
     min-height: 180px;
     margin-bottom: 10px;
-    padding: 45px 90px 25px 44px;
+    padding: 45px 90px 19px 44px;
     margin-right: 0;
   }
 
   .projects__item--big {
     width: 100%;
-    padding: 40px 75px 25px 30px;
+    padding: 40px 75px 19px 30px;
 
     .projects__item-title {
       font-size: 24px;
